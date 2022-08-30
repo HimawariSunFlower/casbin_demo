@@ -1,0 +1,19 @@
+syntax = "proto3";
+package message;
+option go_package = "../message";
+
+message  CasbinInfo{
+    string Path =1;
+    string Method=2;
+}
+
+message CasbinInReceive{
+    string RoleId =1;  // 角色id
+    repeated  string  ExtendsRoleIds=2; //继承角色id
+    repeated CasbinInfo CasbinInfos=3;
+}
+
+message PolicyPathResponse{
+    repeated  CasbinInfo Paths=1;
+}
+

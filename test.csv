@@ -1,0 +1,12 @@
+p,it,/v2/*,*
+p,manager,/v1/*,*
+g,alice,manager
+g,bob,it
+p,base,/menu,GET
+g,it,base,
+g,manager,base,
+g,itboss,it,
+p,itboss,/v3/*,*
+g,ciel,itboss,
+p,it,/v3/code,GET
+g,itboss,manager,

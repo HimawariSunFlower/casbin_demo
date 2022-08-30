@@ -1,0 +1,14 @@
+p, it, /v2/*, *
+p, base, /menu, GET
+p, itboss, /v3/*, *
+p, it, /v3/code, GET
+p, it, /role/permission, get
+p, manager, /role/permission, get
+p, manager, /role, get
+g, alice, manager
+g, bob, it
+g, it, base, 
+g, manager, base, 
+g, itboss, it, 
+g, ciel, itboss, 
+g, itboss, manager, 
